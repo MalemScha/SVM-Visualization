@@ -16,6 +16,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
     <!-- Styles -->
     <style>
+         .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://j2n9a3i8.stackpathcdn.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
         body {
             margin: 0;
             background-color: #fff;
@@ -629,6 +640,7 @@
     <div class="container-fluid" style="margin-let:2px;">
         <div class="row">
             <div class="col-lg-9 border" style="overflow: hidden;">
+            <div class="se-pre-con"></div>
                 <!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg id="map" class="zoom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
                     <path id="Anjaw" class="st0" d="M692.93,299.06c-0.22,0.04-0.22-0.26-0.48-0.26c-0.97,0.13-1.41-0.62-1.89-1.27
@@ -8772,6 +8784,9 @@ city:0.3;enable-background:new;" width="31" height="32" xlink:href="public/E069F
         }
     </style>
     <script>
+        $(document).ready(function() {
+            $(".se-pre-con").fadeOut("slow");
+        });
         function bar_graph(labels, data, vertical) {
             var canvas = $('#barChart');
             console.log(labels);

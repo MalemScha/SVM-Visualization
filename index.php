@@ -12,6 +12,17 @@
         </script>
     </head>
     <style>
+         .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://j2n9a3i8.stackpathcdn.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
         .hide{
             display: none;
         }
@@ -573,8 +584,9 @@
         <div class="container-fluid" style="margin-let:2px;">
             <div class="row">
                 <div class="col-lg-9" style="margin:0;padding:0;">
+                <div class="se-pre-con"></div>
                         <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:9%;"><strong>10.0</strong>-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5; opacity:0.5; top:17%;">9.0-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5; top:17%;">9.0-</span>
                         <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:25%;">8.0-</span>
                         <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:33%;">7.0-</span>
                         <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:41%;">6.0-</span>
@@ -1321,6 +1333,7 @@
             $(document).ready(function() {
                 // Hide the div
                 $(".d-flex").css({'display': "flex"})
+                // $(".se-pre-con").fadeOut("slow");
         });
 
                function updateGraph(shg,water_and_sanitation,agriculture,finance,food_and_supplies ,energy_and_ict,healthcare,animal_husbandry,fisheries,lodging_and_boarding,tourism,handloom_and_handicraft,education,security){
@@ -1713,6 +1726,8 @@
 
                     }
                     responsive();
+                    // responsive();
+                $(".se-pre-con").fadeOut("slow");
 
                 });
             }
