@@ -1,0 +1,95 @@
+#nav-meta-links { text-transform: lowercase; }
+
+.faq.topics li, .faq.countries li, .faq.bli li {list-style-type:none;line-height:30px;}
+.faq.countries li{padding-left: 4px;}
+.faq.topics li i:before,.faq.countries li i:before,.faq.bli li i:before{font-size: 1.8em;}
+.faq.topics li i,.faq.countries li i,.faq.bli li i{margin-right:5px;}
+
+div.faq .topic-ho i:before{color:#33a594}
+div.faq .topic-iw i:before{color:#197ebf}
+div.faq .topic-je i:before{color:#1ea2e2}
+div.faq .topic-sc i:before{color:#db4c60}
+div.faq .topic-es i:before{color:#7fad3e}
+div.faq .topic-eq i:before{color:#21a554}
+div.faq .topic-cg i:before{color:#deaa00}
+div.faq .topic-hs i:before{color:#7e3874}
+div.faq .topic-sw i:before{color:#e5632f}
+div.faq .topic-ps i:before{color:#606060}
+div.faq .topic-wl i:before{color:#992825}
+
+.countries .badge{font-size:.9em;margin-right:10px;display:inline-block;width:25px;text-align:center;background-color:#78869f;-webkit-border-radius:50px;-moz-border-radius:50px;-ms-border-radius:50px;-o-border-radius:50px;border-radius:50px;color:#fff;line-height:25px;}
+
+.bli_bg img{vertical-align: middle;}
+
+#bli-sharing button.btn:disabled, #bli-sharing button.btn.disabled{
+	cursor: default !important;	
+}
+.hidden { display: none; }
+
+@media (min-width: 1024px) {
+	footer #footer-inner #footer-fgv {
+		color: #999;		
+		float: right;
+		padding-left: 10px;
+		display: block;
+		margin-top: -47px;
+	}
+
+	footer #footer-inner #footer-fgv .logo-fgv {
+		display: inline-block;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		background: url("/media/bli/theme/img/LOGO_FGVPROJETOS_AZUL-OECD_150px.png") no-repeat;
+		vertical-align: bottom;
+		width: 150px;
+		background-position-y: 50%;
+		margin-left: 5px;
+	}	
+}
+
+@media (max-width: 1023px) {
+
+	footer #footer-sodexo,
+	footer #footer-fgv {
+		padding: 10px;
+	}
+
+	footer #footer-fgv a {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	footer #footer-ranepa {
+		color: #999;
+		position: absolute;
+		top: 0;
+		margin-left: 400px;
+		display: block;
+		margin-top: -63px;
+	}
+	footer #footer-ranepa .logo-ranepa {
+		display: block;
+		text-indent: 101%;
+		white-space: nowrap;
+		overflow: hidden;
+		background-image: url("/media/bli/images/RANEPA Logo.jpg");
+		background-repeat:no-repeat;
+		vertical-align: bottom;
+		width: 140px;
+		height: 45px;
+		background-size: auto 100%;
+	}
+	footer #footer-ranepa .logo-text {
+		color:#999;
+		max-width: 420px;
+		float:left;
+		font-size: 14px;
+		display: block;
+	}
+	footer #footer-ranepa .logo-text a {
+	color:#78869f;
+	font-size: 14px;
+	}
+}
