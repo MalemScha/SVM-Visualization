@@ -521,7 +521,7 @@
         /* -------------- end west siang -------------*/
         /* -------------- east siang -------------*/
 
-        .animate__mebo {
+        .animate__Mebo {
             transform: scale(3.1) translate(-8.8%, 17.4%);
         }
 
@@ -6633,7 +6633,7 @@ city:0.3;enable-background:new;" width="31" height="32" xlink:href="public/E069F
                                                                                                             <g>
                                                                                                                 <g>
 
-                                                                                                                    <image style="overflow:visible;opacity:0.3;enable-background:new    ;" width="41" height="46" xlink:href="public/E069F82F.png" transform="matrix(1.2109 -3.485643e-03 3.485643e-03 1.2109 61.2808 250.6111)">
+                                                                                                                    <image style="overflow:visible;opacity:0;enable-background:new    ;" width="41" height="46" xlink:href="public/E069F82F.png" transform="matrix(1.2109 -3.485643e-03 3.485643e-03 1.2109 61.2808 250.6111)">
                                                                                                                     </image>
                                                                                                                     <g>
                                                                                                                         <path class="Namsai_st1" d="M74.7,280.3c-6.4-6.4-6.5-16.9-0.1-23.4c6.4-6.4,16.9-6.5,23.4-0.1c6.4,6.4,6.5,16.9,0.1,23.4
@@ -6642,7 +6642,7 @@ city:0.3;enable-background:new;" width="31" height="32" xlink:href="public/E069F
                                                                                                                 </g>
                                                                                                                 <g>
 
-                                                                                                                    <image style="overflow:visible;opacity:0.3;enable-background:new    ;" width="31" height="32" xlink:href="public/E069F8F6.png" transform="matrix(1.2109 -3.485643e-03 3.485643e-03 1.2109 67.3491 255.4371)">
+                                                                                                                    <image style="overflow:visible;opacity:0;enable-background:new    ;" width="31" height="32" xlink:href="public/E069F8F6.png" transform="matrix(1.2109 -3.485643e-03 3.485643e-03 1.2109 67.3491 255.4371)">
                                                                                                                     </image>
                                                                                                                     <g>
                                                                                                                         <circle class="Namsai_st1" cx="86.3" cy="268.6" r="11.3"></circle>
@@ -7934,7 +7934,7 @@ city:0.3;enable-background:new;" width="31" height="32" xlink:href="public/E069F
                                                                                                                                 </g>
                                                                                                                                 <g>
 
-                                                                                                                                    <image style="overflow:visible;opacity:0.3;enable-background:new    ;" width="31" height="32" xlink:href="public/E069F8F6.png" trans form="matrix(0.2706 -7.789758e-04 7.789758e-04 0.2706 461.5764 170.3113)">
+                                                                                                                                    <image style="overflow:visible;opacity:0;enable-background:new    ;" width="31" height="32" xlink:href="public/E069F8F6.png" trans form="matrix(0.2706 -7.789758e-04 7.789758e-04 0.2706 461.5764 170.3113)">
                                                                                                                                     </image>
                                                                                                                                     <g>
                                                                                                                                         <circle class="Lower_Subansiri_st7" cx="465.8" cy="173.2" r="2.5"></circle>
@@ -9051,6 +9051,7 @@ city:0.3;enable-background:new;" width="31" height="32" xlink:href="public/E069F
         });
         $('.circle_hov').click(function() {
             var circle = $(this).attr('id');
+            var circle = circle.replace(/[()]/g, "");
             var dis = $(this).parent().attr('id');
             $('#circl').html("");
             $('#circl').html('animate'.concat('__', circle));
