@@ -451,9 +451,7 @@
 	text-transform:uppercase;
 	color:#AAA
 }
- a{
-	color:#000
-}
+
  ::selection{
 	color:transparent;
 	background-color:transparent
