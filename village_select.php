@@ -2,10 +2,9 @@
 <html>
 
 <head>
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <link href="public/css/app.css" rel="stylesheet">
     <link href="public/css/my.css" rel="stylesheet">
+    <link href="public/css/viz.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="public/js/app.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
@@ -698,6 +697,9 @@
 .closed{
     display: none;
 }
+.box{
+        cursor:pointer;
+    }
 </style>
 <script>
 </script>
@@ -736,7 +738,7 @@
                     <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:73.8%;">20-</span>
                     <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:81.9%;">10-</span>
                     <span style="position:absolute;font-size:0.85rem; opacity:0.7;  top:89.5%;"><strong>0-</strong></span>
-                <div style="display:none;"  class="d-flex flex-fill flex-nowrap">
+                <div style="display:none;margin-bottom:2%;"  class="d-flex flex-fill flex-nowrap">
 
                     <div style="transition: all 2s;" class="trans closed Dirang">
                         <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 500" style="enable-background:new 0 0 50 500;" xml:space="preserve">
@@ -767,7 +769,7 @@
                             <path style="transition: all 4s;" class="st0 Dirang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Dirang</text>
-                            <g style="transition: all 4s;" class="Dirang_hov">
+                            <g style="transition: all 4s;" class="Dirang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -815,7 +817,7 @@
                             <path style="transition: all 4s;" class="st0 Toon_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Toon</text>
-                            <g style="transition: all 4s;" class="Toon_hov">
+                            <g style="transition: all 4s;" class="Toon_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -862,7 +864,7 @@
                             <path style="transition: all 4s;" class="st0 Singchung_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Singchung</text>
-                            <g style="transition: all 4s;" class="Singchung_hov">
+                            <g style="transition: all 4s;" class="Singchung_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -909,7 +911,7 @@
                             <path style="transition: all 4s;" class="st0 Laboliang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Laboliang</text>
-                            <g style="transition: all 4s;" class="Laboliang_hov">
+                            <g style="transition: all 4s;" class="Laboliang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -956,7 +958,7 @@
                             <path style="transition: all 4s;" class="st0 Mebo_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Mebo</text>
-                            <g style="transition: all 4s;" class="Mebo_hov">
+                            <g style="transition: all 4s;" class="Mebo_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1003,7 +1005,7 @@
                             <path style="transition: all 4s;" class="st0 Manpat_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Manpat</text>
-                            <g style="transition: all 4s;" class="Manpat_hov">
+                            <g style="transition: all 4s;" class="Manpat_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1050,7 +1052,7 @@
                             <path style="transition: all 4s;" class="st0 Hari_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Hari</text>
-                            <g style="transition: all 4s;" class="Hari_hov">
+                            <g style="transition: all 4s;" class="Hari_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1097,7 +1099,7 @@
                             <path style="transition: all 4s;" class="st0 Oyan_Village_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Oyan Village</text>
-                            <g style="transition: all 4s;" class="Oyan_Village_hov">
+                            <g style="transition: all 4s;" class="Oyan_Village_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1144,7 +1146,7 @@
                             <path style="transition: all 4s;" class="st0 Ganga_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Ganga</text>
-                            <g style="transition: all 4s;" class="Ganga_hov">
+                            <g style="transition: all 4s;" class="Ganga_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1192,7 +1194,7 @@
                             <path style="transition: all 4s;" class="st0 Kitpi_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kitpi</text>
-                            <g style="transition: all 4s;" class="Kitpi_hov">
+                            <g style="transition: all 4s;" class="Kitpi_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1239,7 +1241,7 @@
                             <path style="transition: all 4s;" class="st0 Changlang_CT_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Changlang (CT)</text>
-                            <g style="transition: all 4s;" class="Changlang_CT_hov">
+                            <g style="transition: all 4s;" class="Changlang_CT_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1286,7 +1288,7 @@
                             <path style="transition: all 4s;" class="st0 Modang_Tage_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Modang Tage</text>
-                            <g style="transition: all 4s;" class="Modang_Tage_hov">
+                            <g style="transition: all 4s;" class="Modang_Tage_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1334,7 +1336,7 @@
                             <path style="transition: all 4s;" class="st0 Jara_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Jara</text>
-                            <g style="transition: all 4s;" class="Jara_hov">
+                            <g style="transition: all 4s;" class="Jara_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1381,7 +1383,7 @@
                             <path style="transition: all 4s;" class="st0 Bamin_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Bamin</text>
-                            <g style="transition: all 4s;" class="Bamin_hov">
+                            <g style="transition: all 4s;" class="Bamin_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1428,7 +1430,7 @@
                             <path style="transition: all 4s;" class="st0 Hong_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Hong</text>
-                            <g style="transition: all 4s;" class="Hong_hov">
+                            <g style="transition: all 4s;" class="Hong_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1475,7 +1477,7 @@
                             <path style="transition: all 4s;" class="st0 Shergaon_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Shergaon</text>
-                            <g style="transition: all 4s;" class="Shergaon_hov">
+                            <g style="transition: all 4s;" class="Shergaon_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1522,7 +1524,7 @@
                             <path style="transition: all 4s;" class="st0 Mukto_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Mukto</text>
-                            <g style="transition: all 4s;" class="Mukto_hov">
+                            <g style="transition: all 4s;" class="Mukto_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1569,7 +1571,7 @@
                             <path style="transition: all 4s;" class="st0 Kharsingsa_Village_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kharsingsa Village</text>
-                            <g style="transition: all 4s;" class="Kharsingsa_Village_hov">
+                            <g style="transition: all 4s;" class="Kharsingsa_Village_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1616,7 +1618,7 @@
                             <path style="transition: all 4s;" class="st0 Lekha_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lekha</text>
-                            <g style="transition: all 4s;" class="Lekha_hov">
+                            <g style="transition: all 4s;" class="Lekha_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1663,7 +1665,7 @@
                             <path style="transition: all 4s;" class="st0 Poma_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Poma</text>
-                            <g style="transition: all 4s;" class="Poma_hov">
+                            <g style="transition: all 4s;" class="Poma_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1710,7 +1712,7 @@
                             <path style="transition: all 4s;" class="st0 Chiputa_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Chiputa</text>
-                            <g style="transition: all 4s;" class="Chiputa_hov">
+                            <g style="transition: all 4s;" class="Chiputa_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1757,7 +1759,7 @@
                             <path style="transition: all 4s;" class="st0 Dokte_Hoj_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Dokte Hoj</text>
-                            <g style="transition: all 4s;" class="Dokte_Hoj_hov">
+                            <g style="transition: all 4s;" class="Dokte_Hoj_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1804,7 +1806,7 @@
                             <path style="transition: all 4s;" class="st0 Sille_Village_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Sille Village</text>
-                            <g style="transition: all 4s;" class="Sille_Village_hov">
+                            <g style="transition: all 4s;" class="Sille_Village_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1851,7 +1853,7 @@
                             <path style="transition: all 4s;" class="st0 Did_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Did</text>
-                            <g style="transition: all 4s;" class="Did_hov">
+                            <g style="transition: all 4s;" class="Did_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1898,7 +1900,7 @@
                             <path style="transition: all 4s;" class="st0 Lower_Dzang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lower Dzang</text>
-                            <g style="transition: all 4s;" class="Lower_Dzang_hov">
+                            <g style="transition: all 4s;" class="Lower_Dzang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1945,7 +1947,7 @@
                             <path style="transition: all 4s;" class="st0 Lempiya_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lempiya</text>
-                            <g style="transition: all 4s;" class="Lempiya_hov">
+                            <g style="transition: all 4s;" class="Lempiya_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -1992,7 +1994,7 @@
                             <path style="transition: all 4s;" class="st0 Kheti_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kheti</text>
-                            <g style="transition: all 4s;" class="Kheti_hov">
+                            <g style="transition: all 4s;" class="Kheti_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2039,7 +2041,7 @@
                             <path style="transition: all 4s;" class="st0 Hija_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Hija</text>
-                            <g style="transition: all 4s;" class="Hija_hov">
+                            <g style="transition: all 4s;" class="Hija_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2086,7 +2088,7 @@
                             <path style="transition: all 4s;" class="st0 Soppo_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Soppo</text>
-                            <g style="transition: all 4s;" class="Soppo_hov">
+                            <g style="transition: all 4s;" class="Soppo_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2133,7 +2135,7 @@
                             <path style="transition: all 4s;" class="st0 Rengging_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Rengging</text>
-                            <g style="transition: all 4s;" class="Rengging_hov">
+                            <g style="transition: all 4s;" class="Rengging_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2180,7 +2182,7 @@
                             <path style="transition: all 4s;" class="st0 Reru_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Reru</text>
-                            <g style="transition: all 4s;" class="Reru_hov">
+                            <g style="transition: all 4s;" class="Reru_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2227,7 +2229,7 @@
                             <path style="transition: all 4s;" class="st0 Karsingsa_Complex_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Karsingsa Complex</text>
-                            <g style="transition: all 4s;" class="Karsingsa_Complex_hov">
+                            <g style="transition: all 4s;" class="Karsingsa_Complex_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2274,7 +2276,7 @@
                             <path style="transition: all 4s;" class="st0 Rani_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Rani</text>
-                            <g style="transition: all 4s;" class="Rani_hov">
+                            <g style="transition: all 4s;" class="Rani_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2321,7 +2323,7 @@
                             <path style="transition: all 4s;" class="st0 Kaimoi_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kaimoi</text>
-                            <g style="transition: all 4s;" class="Kaimoi_hov">
+                            <g style="transition: all 4s;" class="Kaimoi_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2368,7 +2370,7 @@
                             <path style="transition: all 4s;" class="st0 Mani_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Mani</text>
-                            <g style="transition: all 4s;" class="Mani_hov">
+                            <g style="transition: all 4s;" class="Mani_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2415,7 +2417,7 @@
                             <path style="transition: all 4s;" class="st0 Kalong_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kalong</text>
-                            <g style="transition: all 4s;" class="Kalong_hov">
+                            <g style="transition: all 4s;" class="Kalong_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2462,7 +2464,7 @@
                             <path style="transition: all 4s;" class="st0 Khonsa_I_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Khonsa I</text>
-                            <g style="transition: all 4s;" class="Khonsa_I_hov">
+                            <g style="transition: all 4s;" class="Khonsa_I_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2509,7 +2511,7 @@
                             <path style="transition: all 4s;" class="st0 Dutta_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Dutta</text>
-                            <g style="transition: all 4s;" class="Dutta_hov">
+                            <g style="transition: all 4s;" class="Dutta_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2556,7 +2558,7 @@
                             <path style="transition: all 4s;" class="st0 Doimukh_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Doimukh</text>
-                            <g style="transition: all 4s;" class="Doimukh_hov">
+                            <g style="transition: all 4s;" class="Doimukh_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2603,7 +2605,7 @@
                             <path style="transition: all 4s;" class="st0 Tajang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Tajang</text>
-                            <g style="transition: all 4s;" class="Tajang_hov">
+                            <g style="transition: all 4s;" class="Tajang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2650,7 +2652,7 @@
                             <path style="transition: all 4s;" class="st0 Hong_Niitii_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Hong Niitii</text>
-                            <g style="transition: all 4s;" class="Hong_Niitii_hov">
+                            <g style="transition: all 4s;" class="Hong_Niitii_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2697,7 +2699,7 @@
                             <path style="transition: all 4s;" class="st0 Siro_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Siro</text>
-                            <g style="transition: all 4s;" class="Siro_hov">
+                            <g style="transition: all 4s;" class="Siro_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2744,7 +2746,7 @@
                             <path style="transition: all 4s;" class="st0 Old_Changlang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Old Changlang</text>
-                            <g style="transition: all 4s;" class="Old_Changlang_hov">
+                            <g style="transition: all 4s;" class="Old_Changlang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2791,7 +2793,7 @@
                             <path style="transition: all 4s;" class="st0 Parang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Parang</text>
-                            <g style="transition: all 4s;" class="Parang_hov">
+                            <g style="transition: all 4s;" class="Parang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2838,7 +2840,7 @@
                             <path style="transition: all 4s;" class="st0 Mottum_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Mottum</text>
-                            <g style="transition: all 4s;" class="Mottum_hov">
+                            <g style="transition: all 4s;" class="Mottum_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2885,7 +2887,7 @@
                             <path style="transition: all 4s;" class="st0 Michi_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Michi</text>
-                            <g style="transition: all 4s;" class="Michi_hov">
+                            <g style="transition: all 4s;" class="Michi_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2932,7 +2934,7 @@
                             <path style="transition: all 4s;" class="st0 Lumla_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lumla</text>
-                            <g style="transition: all 4s;" class="Lumla_hov">
+                            <g style="transition: all 4s;" class="Lumla_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -2979,7 +2981,7 @@
                             <path style="transition: all 4s;" class="st0 Ngaichang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Ngaichang</text>
-                            <g style="transition: all 4s;" class="Ngaichang_hov">
+                            <g style="transition: all 4s;" class="Ngaichang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3026,7 +3028,7 @@
                             <path style="transition: all 4s;" class="st0 Kugi_Pomte_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kugi Pomte</text>
-                            <g style="transition: all 4s;" class="Kugi_Pomte_hov">
+                            <g style="transition: all 4s;" class="Kugi_Pomte_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3073,7 +3075,7 @@
                             <path style="transition: all 4s;" class="st0 Lapnan_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lapnan</text>
-                            <g style="transition: all 4s;" class="Lapnan_hov">
+                            <g style="transition: all 4s;" class="Lapnan_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3120,7 +3122,7 @@
                             <path style="transition: all 4s;" class="st0 Taring_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Taring</text>
-                            <g style="transition: all 4s;" class="Taring_hov">
+                            <g style="transition: all 4s;" class="Taring_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3167,7 +3169,7 @@
                             <path style="transition: all 4s;" class="st0 Jote_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Jote</text>
-                            <g style="transition: all 4s;" class="Jote_hov">
+                            <g style="transition: all 4s;" class="Jote_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3214,7 +3216,7 @@
                             <path style="transition: all 4s;" class="st0 Gumto_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Gumto</text>
-                            <g style="transition: all 4s;" class="Gumto_hov">
+                            <g style="transition: all 4s;" class="Gumto_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3261,7 +3263,7 @@
                             <path style="transition: all 4s;" class="st0 Mangnang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Mangnang</text>
-                            <g style="transition: all 4s;" class="Mangnang_hov">
+                            <g style="transition: all 4s;" class="Mangnang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3308,7 +3310,7 @@
                             <path style="transition: all 4s;" class="st0 Yoglo_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Yoglo</text>
-                            <g style="transition: all 4s;" class="Yoglo_hov">
+                            <g style="transition: all 4s;" class="Yoglo_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3355,7 +3357,7 @@
                             <path style="transition: all 4s;" class="st0 Keiliya_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Keiliya</text>
-                            <g style="transition: all 4s;" class="Keiliya_hov">
+                            <g style="transition: all 4s;" class="Keiliya_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3402,7 +3404,7 @@
                             <path style="transition: all 4s;" class="st0 Lower_Dzong_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lower Dzong</text>
-                            <g style="transition: all 4s;" class="Lower_Dzong_hov">
+                            <g style="transition: all 4s;" class="Lower_Dzong_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3449,7 +3451,7 @@
                             <path style="transition: all 4s;" class="st0 Bomjir_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Bomjir</text>
-                            <g style="transition: all 4s;" class="Bomjir_hov">
+                            <g style="transition: all 4s;" class="Bomjir_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3496,7 +3498,7 @@
                             <path style="transition: all 4s;" class="st0 Gomkelling_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Gomkelling</text>
-                            <g style="transition: all 4s;" class="Gomkelling_hov">
+                            <g style="transition: all 4s;" class="Gomkelling_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3543,7 +3545,7 @@
                             <path style="transition: all 4s;" class="st0 Murali_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Murali</text>
-                            <g style="transition: all 4s;" class="Murali_hov">
+                            <g style="transition: all 4s;" class="Murali_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3590,7 +3592,7 @@
                             <path style="transition: all 4s;" class="st0 Tenga_Valley_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Tenga Valley</text>
-                            <g style="transition: all 4s;" class="Tenga_Valley_hov">
+                            <g style="transition: all 4s;" class="Tenga_Valley_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3637,7 +3639,7 @@
                             <path style="transition: all 4s;" class="st0 Kambu_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kambu</text>
-                            <g style="transition: all 4s;" class="Kambu_hov">
+                            <g style="transition: all 4s;" class="Kambu_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3684,7 +3686,7 @@
                             <path style="transition: all 4s;" class="st0 OldMohang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Old Mohang</text>
-                            <g style="transition: all 4s;" class="OldMohang_hov">
+                            <g style="transition: all 4s;" class="OldMohang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3731,7 +3733,7 @@
                             <path style="transition: all 4s;" class="st0 Sika-Bamin_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Sika-Bamin</text>
-                            <g style="transition: all 4s;" class="Sika-Bamin_hov">
+                            <g style="transition: all 4s;" class="Sika-Bamin_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3778,7 +3780,7 @@
                             <path style="transition: all 4s;" class="st0 Karle_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Karle</text>
-                            <g style="transition: all 4s;" class="Karle_hov">
+                            <g style="transition: all 4s;" class="Karle_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3825,7 +3827,7 @@
                             <path style="transition: all 4s;" class="st0 Ngorlung_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Ngorlung</text>
-                            <g style="transition: all 4s;" class="Ngorlung_hov">
+                            <g style="transition: all 4s;" class="Ngorlung_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3872,7 +3874,7 @@
                             <path style="transition: all 4s;" class="st0 Sibe_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Sibe</text>
-                            <g style="transition: all 4s;" class="Sibe_hov">
+                            <g style="transition: all 4s;" class="Sibe_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3919,7 +3921,7 @@
                             <path style="transition: all 4s;" class="st0 SikaBamin_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Sika Bamin</text>
-                            <g style="transition: all 4s;" class="SikaBamin_hov">
+                            <g style="transition: all 4s;" class="SikaBamin_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -3966,7 +3968,7 @@
                             <path style="transition: all 4s;" class="st0 Balek_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Balek</text>
-                            <g style="transition: all 4s;" class="Balek_hov">
+                            <g style="transition: all 4s;" class="Balek_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4013,7 +4015,7 @@
                             <path style="transition: all 4s;" class="st0 KugiPomse_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kugi Pomse</text>
-                            <g style="transition: all 4s;" class="KugiPomse_hov">
+                            <g style="transition: all 4s;" class="KugiPomse_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4060,7 +4062,7 @@
                             <path style="transition: all 4s;" class="st0 Borum_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Borum</text>
-                            <g style="transition: all 4s;" class="Borum_hov">
+                            <g style="transition: all 4s;" class="Borum_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4107,7 +4109,7 @@
                             <path style="transition: all 4s;" class="st0 Boyng_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Boyng</text>
-                            <g style="transition: all 4s;" class="Boyng_hov">
+                            <g style="transition: all 4s;" class="Boyng_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4154,7 +4156,7 @@
                             <path style="transition: all 4s;" class="st0 Kambu__txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kambu_</text>
-                            <g style="transition: all 4s;" class="Kambu__hov">
+                            <g style="transition: all 4s;" class="Kambu__hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4201,7 +4203,7 @@
                             <path style="transition: all 4s;" class="st0 Kharsingsa_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kharsingsa</text>
-                            <g style="transition: all 4s;" class="Kharsingsa_hov">
+                            <g style="transition: all 4s;" class="Kharsingsa_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4248,7 +4250,7 @@
                             <path style="transition: all 4s;" class="st0 Molyang_Tajang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Molyang (Tajang)</text>
-                            <g style="transition: all 4s;" class="Molyang_Tajang_hov">
+                            <g style="transition: all 4s;" class="Molyang_Tajang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4296,7 +4298,7 @@
                             <path style="transition: all 4s;" class="st0 Shinchung_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Shinchung</text>
-                            <g style="transition: all 4s;" class="Shinchung_hov">
+                            <g style="transition: all 4s;" class="Shinchung_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4343,7 +4345,7 @@
                             <path style="transition: all 4s;" class="st0 Jigaon_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Jigaon</text>
-                            <g style="transition: all 4s;" class="Jigaon_hov">
+                            <g style="transition: all 4s;" class="Jigaon_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4390,7 +4392,7 @@
                             <path style="transition: all 4s;" class="st0 Nenchaliya_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Nenchaliya</text>
-                            <g style="transition: all 4s;" class="Nenchaliya_hov">
+                            <g style="transition: all 4s;" class="Nenchaliya_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4437,7 +4439,7 @@
                             <path style="transition: all 4s;" class="st0 Durpa_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Durpa</text>
-                            <g style="transition: all 4s;" class="Durpa_hov">
+                            <g style="transition: all 4s;" class="Durpa_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4484,7 +4486,7 @@
                             <path style="transition: all 4s;" class="st0 Mani_Polyang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Mani Polyang</text>
-                            <g style="transition: all 4s;" class="Mani_Polyang_hov">
+                            <g style="transition: all 4s;" class="Mani_Polyang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4531,7 +4533,7 @@
                             <path style="transition: all 4s;" class="st0 TarasuMobuk_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Tarasu Mobuk</text>
-                            <g style="transition: all 4s;" class="TarasuMobuk_hov">
+                            <g style="transition: all 4s;" class="TarasuMobuk_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4578,7 +4580,7 @@
                             <path style="transition: all 4s;" class="st0 Kaisu_LC_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kaisu L/C</text>
-                            <g style="transition: all 4s;" class="Kaisu_LC_hov">
+                            <g style="transition: all 4s;" class="Kaisu_LC_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4625,7 +4627,7 @@
                             <path style="transition: all 4s;" class="st0 OldZiro_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Old Ziro</text>
-                            <g style="transition: all 4s;" class="OldZiro_hov">
+                            <g style="transition: all 4s;" class="OldZiro_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4672,7 +4674,7 @@
                             <path style="transition: all 4s;" class="st0 Boying_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Boying</text>
-                            <g style="transition: all 4s;" class="Boying_hov">
+                            <g style="transition: all 4s;" class="Boying_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4719,7 +4721,7 @@
                             <path style="transition: all 4s;" class="st0 Lekhi_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lekhi</text>
-                            <g style="transition: all 4s;" class="Lekhi_hov">
+                            <g style="transition: all 4s;" class="Lekhi_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4766,7 +4768,7 @@
                             <path style="transition: all 4s;" class="st0 Nyorch_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Nyorch</text>
-                            <g style="transition: all 4s;" class="Nyorch_hov">
+                            <g style="transition: all 4s;" class="Nyorch_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4813,7 +4815,7 @@
                             <path style="transition: all 4s;" class="st0 Gumto-i_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Gumto-i</text>
-                            <g style="transition: all 4s;" class="Gumto-i_hov">
+                            <g style="transition: all 4s;" class="Gumto-i_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4860,7 +4862,7 @@
                             <path style="transition: all 4s;" class="st0 SilleCamp_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Sille Camp</text>
-                            <g style="transition: all 4s;" class="SilleCamp_hov">
+                            <g style="transition: all 4s;" class="SilleCamp_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4907,7 +4909,7 @@
                             <path style="transition: all 4s;" class="st0 Kheel_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kheel</text>
-                            <g style="transition: all 4s;" class="Kheel_hov">
+                            <g style="transition: all 4s;" class="Kheel_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -4954,7 +4956,7 @@
                             <path style="transition: all 4s;" class="st0 Bandardewa_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Bandardewa</text>
-                            <g style="transition: all 4s;" class="Bandardewa_hov">
+                            <g style="transition: all 4s;" class="Bandardewa_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5001,7 +5003,7 @@
                             <path style="transition: all 4s;" class="st0 Ruksin_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Ruksin</text>
-                            <g style="transition: all 4s;" class="Ruksin_hov">
+                            <g style="transition: all 4s;" class="Ruksin_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5048,7 +5050,7 @@
                             <path style="transition: all 4s;" class="st0 deed_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Deed</text>
-                            <g style="transition: all 4s;" class="deed_hov">
+                            <g style="transition: all 4s;" class="deed_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5095,7 +5097,7 @@
                             <path style="transition: all 4s;" class="st0 Jollang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Jollang</text>
-                            <g style="transition: all 4s;" class="Jollang_hov">
+                            <g style="transition: all 4s;" class="Jollang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5142,7 +5144,7 @@
                             <path style="transition: all 4s;" class="st0 KalungReru_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Kalung Reru</text>
-                            <g style="transition: all 4s;" class="KalungReru_hov">
+                            <g style="transition: all 4s;" class="KalungReru_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5189,7 +5191,7 @@
                             <path style="transition: all 4s;" class="st0 Ziro_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Ziro</text>
-                            <g style="transition: all 4s;" class="Ziro_hov">
+                            <g style="transition: all 4s;" class="Ziro_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5236,7 +5238,7 @@
                             <path style="transition: all 4s;" class="st0 Nafra_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Nafra</text>
-                            <g style="transition: all 4s;" class="Nafra_hov">
+                            <g style="transition: all 4s;" class="Nafra_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5283,7 +5285,7 @@
                             <path style="transition: all 4s;" class="st0 Namsang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Namsang</text>
-                            <g style="transition: all 4s;" class="Namsang_hov">
+                            <g style="transition: all 4s;" class="Namsang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5330,7 +5332,7 @@
                             <path style="transition: all 4s;" class="st0 Pasighat_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Pasighat</text>
-                            <g style="transition: all 4s;" class="Pasighat_hov">
+                            <g style="transition: all 4s;" class="Pasighat_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5377,7 +5379,7 @@
                             <path style="transition: all 4s;" class="st0 Roying_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Roying</text>
-                            <g style="transition: all 4s;" class="Roying_hov">
+                            <g style="transition: all 4s;" class="Roying_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5424,7 +5426,7 @@
                             <path style="transition: all 4s;" class="st0 Lohitpur_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lohitpur</text>
-                            <g style="transition: all 4s;" class="Lohitpur_hov">
+                            <g style="transition: all 4s;" class="Lohitpur_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5471,7 +5473,7 @@
                             <path style="transition: all 4s;" class="st0 Lekang_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Lekang</text>
-                            <g style="transition: all 4s;" class="Lekang_hov">
+                            <g style="transition: all 4s;" class="Lekang_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5518,7 +5520,7 @@
                             <path style="transition: all 4s;" class="st0 Sille_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Sille</text>
-                            <g style="transition: all 4s;" class="Sille_hov">
+                            <g style="transition: all 4s;" class="Sille_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5565,7 +5567,7 @@
                             <path style="transition: all 4s;" class="st0 Tajang__txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Tajang_</text>
-                            <g style="transition: all 4s;" class="Tajang__hov">
+                            <g style="transition: all 4s;" class="Tajang__hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5612,7 +5614,7 @@
                             <path style="transition: all 4s;" class="st0 Rowta_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Rowta</text>
-                            <g style="transition: all 4s;" class="Rowta_hov">
+                            <g style="transition: all 4s;" class="Rowta_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5659,7 +5661,7 @@
                             <path style="transition: all 4s;" class="st0 Pareng_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Pareng</text>
-                            <g style="transition: all 4s;" class="Pareng_hov">
+                            <g style="transition: all 4s;" class="Pareng_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5706,7 +5708,7 @@
                             <path style="transition: all 4s;" class="st0 Gomkhelling_txt" d="M25.17,96c0,134.67,0,269.33,0,404" />
                             <rect x="19.88" y="430.4" class="st1" width="5.4" height="26.23" />
                             <text transform="matrix(0 -1 1 0 27.1616 496.5605)" class="st2 st3">Gomkhelling</text>
-                            <g style="transition: all 4s;" class="Gomkhelling_hov">
+                            <g style="transition: all 4s;" class="Gomkhelling_hov box" >                                                                      <image class="glow" style="overflow:visible;opacity:0;transform: translateY(14.2%) translateX(0%);" width="50" height="50" xlink:href="public/glow.png">                    </image> 
                                 <path class="water_and_sanitation"  d="M25.15,96.49c-3.16-4.54-6.25-9.15-9.41-13.76c-0.81-2.67-1.62-5.33-2.43-8c1.84,2.09,3.68,4.25,5.59,6.34C20.96,86.26,23.09,91.37,25.15,96.49z" />
                                 <path class="shg"  d="M25.29,96.49c-0.37-5.48-0.74-11.03-1.1-16.5c0.66-2.74,1.32-5.4,2.06-8.14c0.51,2.74,1.03,5.48,1.54,8.21C26.91,85.54,26.1,91.01,25.29,96.49z" />
                                 <path class="security"  d="M25.15,96.56c2.43-4.97,4.85-9.94,7.28-14.92c1.99-2.02,3.9-4.04,5.81-6.13c-0.96,2.67-1.84,5.26-2.79,7.93C32.06,87.84,28.6,92.16,25.15,96.56z" />
@@ -5724,7 +5726,9 @@
                             </g>
                         </svg>
                     </div>
-
+                    <div id="visButtonsContainer" class="mixerPageMode" style="visibility: visible; opacity: 0;">
+		<div id="visButtonsSorting"><span data-i18n="[html]vis.sortbuttons.sortBy">&#8592; Villages</span></div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 text-center">
@@ -5985,6 +5989,46 @@
         </div>
         </div>
 
+        <div style="margin-top:20%" class="h-50"></div>
+      
+      <div id="qtip-hoverbox" class="qtip  qtip-default  qtip-pos-bc qtip-focus qtip-pos-tc" tracking="false" role="alert" aria-live="polite" aria-atomic="false" aria-describedby="qtip-hoverbox-content" aria-hidden="false" data-qtip-id="hoverbox" style="z-index: 22001;">
+      <div class="qtip-tip" style="background-color: transparent !important; border: 0px !important; width: 6px; height: 6px; line-height: 6px; left: 50%; margin-left: -3px; top: -6px;">
+      <canvas width="6" height="6" style="background-color: transparent !important; border: 0px !important; width: 6px; height: 6px;">
+  </canvas></div><div class="qtip-content" id="qtip-hoverbox-content" aria-atomic="true">
+      <div id="hoverbox" data-hasqtip="hoverbox" aria-describedby="qtip-hoverbox" style="display: block; visibility: visible;">
+      <div class="header">
+</div>
+<div class="content clearfix ">
+  <div class="dimensionLabel">Water and Sanitation</div>
+<div id="water_and_sanitation" class="barChartBar" style="width:75px; background:#3490dc">&nbsp;</div>
+<div  class="dimensionLabel">Health</div>
+<div id="health" class="barChartBar" style="width:21.7454401430257px; background:#38c172">&nbsp;</div>
+<div  class="dimensionLabel">SHG</div>
+<div id="shg" class="barChartBar" style="width:59.83771344376403px; background:#AB47BC">&nbsp;</div>
+<div  class="dimensionLabel">Food and Supplies</div>
+<div id="food_and_supplies" class="barChartBar" style="width:63.0688432723272px; background:#880E4F">&nbsp;</div>
+<div  class="dimensionLabel">Handloom and Handicraft</div>
+<div id="handloom_and_handicraft" class="barChartBar" style="width:56.999441171214556px; background:#470e88">&nbsp;</div>
+<div  class="dimensionLabel">Agriculture</div>
+<div id="agriculture" class="barChartBar" style="width:59.57585554485222px; background:#88840e">&nbsp;</div>
+<div  class="dimensionLabel">Finance</div>
+<div id="finance" class="barChartBar" style="width:50.098248676915986px; background:#88470e">&nbsp;</div>
+<div  class="dimensionLabel">Energy and ICT</div>
+<div id="energy_and_ict" class="barChartBar" style="width:56.65665057097126px; background:#ffff33">&nbsp;</div>
+<div  class="dimensionLabel">Animal Husbandry</div>
+<div id="animal_husbandry" class="barChartBar" style="width:70.10115864436605px; background:#ff3333">&nbsp;</div>
+<div  class="dimensionLabel">Fisheries</div>
+<div id="fisheries" class="barChartBar" style="width:67.0997874991027px; background:#707070">&nbsp;</div>
+<div  class="dimensionLabel">Loadging and Boarding</div>
+<div id="loadging_and_boarding" class="barChartBar" style="width:64.68256604931783px; background:#509650">&nbsp;</div>
+<div  class="dimensionLabel">Tourism</div>
+<div id="tourism" class="barChartBar" style="width:64.68256604931783px; background:#965050">&nbsp;</div>
+<div  class="dimensionLabel">Education</div>
+<div id="education" class="barChartBar" style="width:64.68256604931783px; background:#f4511e">&nbsp;</div>
+<div  class="dimensionLabel">Security</div>
+<div id="security" class="barChartBar" style="width:64.68256604931783px; background:#004d40">&nbsp;</div>
+</div></div></div></div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
@@ -5994,12 +6038,13 @@
                 'display': "flex"
             });
             $(".se-pre-con").fadeOut("slow");
+            $('#visButtonsContainer').css({'opacity':1});
             $('#multiple-checkboxes').multiselect({
                 buttonWidth: '300px',
           includeSelectAllOption: true,
         });
         });
-
+        var order = [];
 
         function updateGraph(len,villages,shg, water_and_sanitation, agriculture, finance, food_and_supplies, energy_and_ict, healthcare, animal_husbandry, fisheries, lodging_and_boarding, tourism, handloom_and_handicraft, education, security) {
             var set = 0;
@@ -6024,7 +6069,7 @@
             var items = [];
 
             $.getJSON("public/village.json", function(data) {
-                var order = [];
+                order = [];
                 var s;
                 var w;
                 var agri;
@@ -6885,6 +6930,42 @@
                 var secu = $('.count14').text();
                 updateGraph(foo.length,foo,s, w, agri, f, fns, eni, h, anh, fish, lnb, t, hnh, edu, secu);
         });
+
+
+        $('.box').hover(function(event){
+                // .slice(0, -4)
+                var elm = $(this).attr("class").split(" ")[0];
+                var dist = elm.slice(0,-4);
+                $("."+elm+" > .glow").css({'opacity':1});
+                var x = $(this).position();
+                console.log(order);
+                for (let i = 0; i < order.length; i++) {
+                    if(dist.localeCompare(order[i].name) == 0){
+                        $('.header').html(order[i].name.replace(/[_-]/g, " "));
+
+                        $("#water_and_sanitation").css({'width':(order[i].water_and_sanitation*75)/100 +'px'});
+                        $("#shg").css({'width':(order[i].shg*75)/100 +'px'});
+                        $("#health").css({'width':(order[i].health*75)/100 +'px'});
+                        $("#tourism").css({'width':(order[i].tourism*75)/100 +'px'});
+                        $("#education").css({'width':(order[i].education*75)/100 +'px'});
+                        $("#security").css({'width':(order[i].security*75)/100 +'px'});
+                        $("#agriculture").css({'width':(order[i].agriculture*75)/100 +'px'});
+                        $("#finance").css({'width':(order[i].finance*75)/100 +'px'});
+                        $("#fisheries").css({'width':(order[i].water_and_sanitation*75)/100 +'px'});
+                        $("#animal_husbandry").css({'width':(order[i].animal_husbandry*75)/100 +'px'});
+                        $("#food_and_supplies").css({'width':(order[i].food_and_supplies*75)/100 +'px'});
+                        $("#handloom_and_handicraft").css({'width':(order[i].handloom_and_handicraft*75)/100 +'px'});
+                        $("#energy_and_ict").css({'width':(order[i].energy_and_ict*75)/100 +'px'});
+                        $("#loadging_and_boarding").css({'width':(order[i].loadging_and_boarding*75)/100 +'px'});
+
+                    }
+
+                }
+                    $("#qtip-hoverbox").css({top: event.clientY, left: event.clientX}).show();
+            }, function() {
+                $(".glow").css({'opacity':0})
+    $("#qtip-hoverbox").hide();
+});
     </script>
 
 </body>

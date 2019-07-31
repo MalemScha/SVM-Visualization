@@ -3,6 +3,8 @@
     <head>
         <link href="public/css/app.css" rel="stylesheet">
         <link href="public/css/my.css" rel="stylesheet">
+        
+        <link href="public/css/viz.css" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
@@ -561,6 +563,9 @@
     .st0{
         cursor: pointer;
     }
+    .box{
+        cursor:pointer;
+    }
     </style>
     <body>
 <header id="header" class="">
@@ -585,17 +590,17 @@
             <div class="row">
                 <div class="col-lg-9" style="margin:0;padding:0;">
                 <div class="se-pre-con"></div>
-                        <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:9%;"><strong>10.0</strong>-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5; top:17%;">9.0-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:25%;">8.0-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:33%;">7.0-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:41%;">6.0-</span>
-                        <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:49%;"><strong>5.0</strong></span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:57%;">4.0-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:65%;">3.0-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:73%;">2.0-</span>
-                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:81%;">1.0-</span>
-                        <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:89%;"><strong>0.0-</strong></span>
+                        <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:9%;"><strong>100</strong>-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5; top:17%;">90-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:25%;">80-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:33%;">70-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:41%;">60-</span>
+                        <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:49%;"><strong>50</strong></span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:57%;">40-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:65%;">30-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:73%;">20-</span>
+                        <span style="position:absolute;font-size:0.7rem; opacity:0.5;  top:81%;">10-</span>
+                        <span style="position:absolute;font-size:0.80rem; opacity:0.7;  top:89%;"><strong>0-</strong></span>
                     <div style="display:none;" class="d-flex flex-fill flex-nowrap">
                         <div style="transition: all 0.5s;" class="Papumpare trans">
                             <?xml version="1.0" encoding="utf-8"?>
@@ -613,7 +618,9 @@
                                 <path style="transition: all 3s;"  class="st0 Papumpare_txt" d="M40.23,44.17c0,152.46,0,304.92,0,457.38"/>
                                 <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                 <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">Papumpare</text>
-                                <g style="transition: all 4s;" class="Papumpare_hov">
+                                <g style="transition: all 4s;" class="Papumpare_hov box" >                                
+                                     <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">
+                                                                             </image> >
                                     <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                         c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                     <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -663,7 +670,7 @@
                            <path style="transition: all 3s;" class="st0 West_Kameng_txt" d="M40.23,44.17c0,152.46,0,304.92,0,457.38"/>
                            <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                            <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">West Kameng</text>
-                           <g style="transition: all 4s;" class="West_Kameng_hov">
+                           <g style="transition: all 4s;" class="West_Kameng_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                    c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -714,7 +721,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     East Siang</text>
-                               <g class="East_Siang_hov">
+                               <g class="East_Siang_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -765,7 +772,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Lower Subansiri</text>
-                               <g class="Lower_Subansiri_hov">
+                               <g class="Lower_Subansiri_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -799,8 +806,6 @@
 
 
                         </div>
-
-
                         <div  class="Changlang trans">
 
                                 <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -812,11 +817,13 @@
                                    .st3{font-size:12.8068px;}
                                    .st4{fill:#F08080;}
                                </style>
+
+                               
                                <path class="st0 Changlang_txt" d="M40.23,44.17c0,152.46,0,304.92,0,457.38"/>
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Changlang</text>
-                               <g class="Changlang_hov">
+                               <g class="Changlang_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -867,7 +874,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Lohit</text>
-                               <g class="Lohit_hov">
+                               <g class="Lohit_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -918,7 +925,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Namsai</text>
-                               <g class="Namsai_hov">
+                               <g class="Namsai_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -969,7 +976,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Tawang</text>
-                               <g class="Tawang_hov">
+                               <g class="Tawang_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -1020,7 +1027,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Tirap</text>
-                               <g class="Tirap_hov">
+                               <g class="Tirap_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -1071,7 +1078,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     West Siang</text>
-                               <g class="West_Siang_hov">
+                               <g class="West_Siang_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -1122,7 +1129,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Lower Dibang Valley</text>
-                               <g class="Lower_Dibang_Valley_hov">
+                               <g class="Lower_Dibang_Valley_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -1172,7 +1179,7 @@
                                <rect x="31.12" y="440.14" class="st1" width="8.53" height="41.42"/>
                                <text transform="matrix(4.489660e-11 -1 1 4.489660e-11 34.7271 481.459)" class="st2 st3">
                                     Shi-Yomi</text>
-                               <g class="Shi-Yomi_hov">
+                               <g class="Shi-Yomi_hov box" >                                 <image class="glow" style="overflow:visible;opacity:0;" width="80" height="100" xlink:href="public/glow.png">                                                 </image> >
                                    <path class="water_and_sanitation"  d="M40.23,43.92c-4.89-7.17-9.67-14.45-14.57-21.73
                                        c-1.25-4.21-2.5-8.42-3.76-12.63c2.84,3.3,5.69,6.71,8.65,10.01C33.74,27.76,37.04,35.84,40.23,43.92z"/>
                                    <path class="shg"  d="M40.46,43.92c-0.57-8.65-1.14-17.41-1.71-26.06C39.77,13.53,40.8,9.32,41.93,5
@@ -1206,6 +1213,10 @@
 
 
                         </div>
+                        <div id="visButtonsContainer" class="mixerPageMode" style="visibility: visible; opacity: 0;">
+		<div id="visButtonsSorting"><span data-i18n="[html]vis.sortbuttons.sortBy">&#8592; Districts</span></div>
+		
+	</div>
                       </div>
                 </div>
                 <div class="col-lg-3 text-center">
@@ -1276,9 +1287,9 @@
                                     <div class="fill8"></div>
                                 </div>
                             </li>
-                            <li title="Animal Husbandary" class="list-group-item d-flex justify-content-between align-items-center">
+                            <li title="Animal Husbandry" class="list-group-item d-flex justify-content-between align-items-center">
                                 <i class="fa fa-paw" style="font-size:20px;color:#ff3333;"></i>
-                                <div title="Animal Husbandary" class="slider-container s9">
+                                <div title="Animal Husbandry" class="slider-container s9">
                                     <input id="slider9" type="range" min="0" max="100" step="25" value="0" />
                                     <div class="count9 hide">0</div>
                                     <div class="fill9"></div>
@@ -1329,14 +1340,56 @@
                 </div>
             </div>
         </div>
+        
+        <div style="margin-top:20%" class="h-50"></div>
+      
+        <div id="qtip-hoverbox" class="qtip  qtip-default  qtip-pos-bc qtip-focus qtip-pos-tc" tracking="false" role="alert" aria-live="polite" aria-atomic="false" aria-describedby="qtip-hoverbox-content" aria-hidden="false" data-qtip-id="hoverbox" style="z-index: 22001;">
+        <div class="qtip-tip" style="background-color: transparent !important; border: 0px !important; width: 6px; height: 6px; line-height: 6px; left: 50%; margin-left: -3px; top: -6px;">
+        <canvas width="6" height="6" style="background-color: transparent !important; border: 0px !important; width: 6px; height: 6px;">
+    </canvas></div><div class="qtip-content" id="qtip-hoverbox-content" aria-atomic="true">
+        <div id="hoverbox" data-hasqtip="hoverbox" aria-describedby="qtip-hoverbox" style="display: block; visibility: visible;">
+        <div class="header">
+</div>
+<div class="content clearfix ">
+	<div class="dimensionLabel">Water and Sanitation</div>
+<div id="water_and_sanitation" class="barChartBar" style="width:75px; background:#3490dc">&nbsp;</div>
+<div  class="dimensionLabel">Health</div>
+<div id="health" class="barChartBar" style="width:21.7454401430257px; background:#38c172">&nbsp;</div>
+<div  class="dimensionLabel">SHG</div>
+<div id="shg" class="barChartBar" style="width:59.83771344376403px; background:#AB47BC">&nbsp;</div>
+<div  class="dimensionLabel">Food and Supplies</div>
+<div id="food_and_supplies" class="barChartBar" style="width:63.0688432723272px; background:#880E4F">&nbsp;</div>
+<div  class="dimensionLabel">Handloom and Handicraft</div>
+<div id="handloom_and_handicraft" class="barChartBar" style="width:56.999441171214556px; background:#470e88">&nbsp;</div>
+<div  class="dimensionLabel">Agriculture</div>
+<div id="agriculture" class="barChartBar" style="width:59.57585554485222px; background:#88840e">&nbsp;</div>
+<div  class="dimensionLabel">Finance</div>
+<div id="finance" class="barChartBar" style="width:50.098248676915986px; background:#88470e">&nbsp;</div>
+<div  class="dimensionLabel">Energy and ICT</div>
+<div id="energy_and_ict" class="barChartBar" style="width:56.65665057097126px; background:#ffff33">&nbsp;</div>
+<div  class="dimensionLabel">Animal Husbandry</div>
+<div id="animal_husbandry" class="barChartBar" style="width:70.10115864436605px; background:#ff3333">&nbsp;</div>
+<div  class="dimensionLabel">Fisheries</div>
+<div id="fisheries" class="barChartBar" style="width:67.0997874991027px; background:#707070">&nbsp;</div>
+<div  class="dimensionLabel">Loadging and Boarding</div>
+<div id="loadging_and_boarding" class="barChartBar" style="width:64.68256604931783px; background:#509650">&nbsp;</div>
+<div  class="dimensionLabel">Tourism</div>
+<div id="tourism" class="barChartBar" style="width:64.68256604931783px; background:#965050">&nbsp;</div>
+<div  class="dimensionLabel">Education</div>
+<div id="education" class="barChartBar" style="width:64.68256604931783px; background:#f4511e">&nbsp;</div>
+<div  class="dimensionLabel">Security</div>
+<div id="security" class="barChartBar" style="width:64.68256604931783px; background:#004d40">&nbsp;</div>
+</div></div></div></div>
         <script>
             $(document).ready(function() {
                 // Hide the div
                 $(".d-flex").css({'display': "flex"})
                 // $(".se-pre-con").fadeOut("slow");
         });
+        var order = [];
 
                function updateGraph(shg,water_and_sanitation,agriculture,finance,food_and_supplies ,energy_and_ict,healthcare,animal_husbandry,fisheries,lodging_and_boarding,tourism,handloom_and_handicraft,education,security){
+               order = [];
                 var set = 0;
             if(shg==0 && water_and_sanitation==0 && agriculture==0 && finance==0 && food_and_supplies==0 && energy_and_ict==0 && healthcare==0 && animal_husbandry==0 && fisheries==0 && lodging_and_boarding==0 && tourism==0 && handloom_and_handicraft==0 && education==0 && security==0){
                 shg=100;
@@ -1373,7 +1426,6 @@
                 var secu;
 
                 $.getJSON( "public/district.json", function( data ) {
-                    var order = [];
                 $.each( data, function( dist, scores ) {
                         s = (shg * scores.verticals.shg.score)/100;
                         w = (water_and_sanitation *scores.verticals.water_and_sanitation.score)/100;
@@ -1415,7 +1467,6 @@
                     order.sort(function(a,b) {
                         return b.tot_score-a.tot_score;
                     })
-                    console.log(order);
                     // style="transform-origin: 100% 100%;
                     //             transform-box: fill-box;
                     //             transform: scale(1);"
@@ -1728,6 +1779,7 @@
                     responsive();
                     // responsive();
                 $(".se-pre-con").fadeOut("slow");
+                $('#visButtonsContainer').css({'opacity':1});
 
                 });
             }
@@ -2184,12 +2236,41 @@
 
                 }
             });
-            $('.st0').hover(function(){
-                $('.st0').css({
-                    'fill': "green",
-                });
-            });
+        
+            $('.box').hover(function(event){
+                // .slice(0, -4)
+                var elm = $(this).attr("class").split(" ")[0];
+                var dist = elm.slice(0,-4);
+                $("."+elm+" > .glow").css({'opacity':1});
+                var x = $(this).position();
+                console.log(order);
+                for (let i = 0; i < order.length; i++) {
+                    if(dist.localeCompare(order[i].name) == 0){
+                        $('.header').html(order[i].name.replace(/[_-]/g, " "));
 
+                        $("#water_and_sanitation").css({'width':(order[i].water_and_sanitation*75)/100 +'px'});
+                        $("#shg").css({'width':(order[i].shg*75)/100 +'px'});
+                        $("#health").css({'width':(order[i].health*75)/100 +'px'});
+                        $("#tourism").css({'width':(order[i].tourism*75)/100 +'px'});
+                        $("#education").css({'width':(order[i].education*75)/100 +'px'});
+                        $("#security").css({'width':(order[i].security*75)/100 +'px'});
+                        $("#agriculture").css({'width':(order[i].agriculture*75)/100 +'px'});
+                        $("#finance").css({'width':(order[i].finance*75)/100 +'px'});
+                        $("#fisheries").css({'width':(order[i].water_and_sanitation*75)/100 +'px'});
+                        $("#animal_husbandry").css({'width':(order[i].animal_husbandry*75)/100 +'px'});
+                        $("#food_and_supplies").css({'width':(order[i].food_and_supplies*75)/100 +'px'});
+                        $("#handloom_and_handicraft").css({'width':(order[i].handloom_and_handicraft*75)/100 +'px'});
+                        $("#energy_and_ict").css({'width':(order[i].energy_and_ict*75)/100 +'px'});
+                        $("#loadging_and_boarding").css({'width':(order[i].loadging_and_boarding*75)/100 +'px'});
+
+                    }
+
+                }
+                    $("#qtip-hoverbox").css({top: event.clientY, left: event.clientX}).show();
+            }, function() {
+                $(".glow").css({'opacity':0})
+    $("#qtip-hoverbox").hide();
+});
         </script>
     </body>
 </html>
