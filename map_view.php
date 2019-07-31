@@ -33,7 +33,7 @@
         }
 
         .st0 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -53,7 +53,7 @@
 
         .st2 {
             cursor: pointer;
-            fill: lightgray;
+            fill: #0288d1;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -62,7 +62,7 @@
         }
 
         .st3 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -71,7 +71,7 @@
         }
 
         .st4 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -80,7 +80,7 @@
         }
 
         .st5 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -100,7 +100,7 @@
 
         .st7 {
             cursor: pointer;
-            fill: #d500f9;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -119,7 +119,7 @@
         }
 
         .st9 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -128,7 +128,7 @@
         }
 
         .st10 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -137,7 +137,7 @@
         }
 
         .st11 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -146,7 +146,7 @@
         }
 
         .st12 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -195,7 +195,7 @@
         }
 
         .st17 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -214,7 +214,7 @@
         }
 
         .st19 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -233,7 +233,7 @@
         }
 
         .st21 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -242,7 +242,7 @@
         }
 
         .st22 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -251,7 +251,7 @@
         }
 
         .st23 {
-            fill: lightsalmon;
+            fill: #212121;
             stroke: white;
             stroke-width: 1.5;
             stroke-linecap: round;
@@ -274,15 +274,11 @@
         }
 
         .st2:hover {
-            fill: darkgray;
+            fill: #02a1f8;
         }
 
         .st6:hover {
             fill: #8c24cc;
-        }
-
-        .st7:hover {
-            fill: #ea80fc;
         }
 
         .st8:hover {
@@ -1137,7 +1133,7 @@
 	c0.44-0.13,0.83-0.22,1.27,0.09c0.22,0.18,0.57,0.35,0.88,0.26c0.31-0.04,0.62,0,0.88,0.04c0.26,0.09,0.53,0.26,0.66,0.53
 	c0.22,0.31,0.57,0.35,0.83,0.04c0.26-0.31,0.62-0.26,0.92-0.18c0.53,0.18,1.01,0.31,1.54,0.48c0.18,0.04,0.44,0.09,0.62,0.04
 	c0.22-0.04,0.53,0.18,0.53,0.48s0.04,0.62,0.26,0.88L472.56,294.01z"></path>
-                    <path id="Shi_Yomi" class="st7 enable" d="M430.94,180.23c0.04-0.44,0.31-0.7,0.62-0.97c0.75-0.79,0.79-1.49,0-2.24
+                    <path id="Shi_Yomi" class="st7" d="M430.94,180.23c0.04-0.44,0.31-0.7,0.62-0.97c0.75-0.79,0.79-1.49,0-2.24
 	c-0.44-0.44-0.57-0.88-0.53-1.45c0-0.66,0.04-1.32-0.35-1.85c-0.13-0.18-0.26-0.31-0.44-0.48c-1.05-0.92-2.11-1.89-2.68-3.25
 	c-0.48-1.01-1.05-2.02-1.41-3.12c-0.22-0.75-0.88-1.36-1.05-2.15c-0.18-0.83-0.26-1.71-0.66-2.42c-0.57-1.1-0.62-2.55-2.02-3.16
 	c-0.57-0.22-0.75-0.83-0.79-1.27c-0.13-1.1-0.83-1.89-1.36-2.86c-0.18-0.31-0.26-0.66-0.13-0.97c0.53-0.97,0.53-2.15,1.45-2.94
@@ -2623,7 +2619,7 @@
                         <svg class="use single_Dibang_Valley closed" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
                             <style type="text/css">
                                 .Dibang_Valley {
-                                    fill: lightsalmon;
+                                    fill: #212121;
                                     stroke: #fff;
                                     stroke-width: 2;
                                     stroke-linecap: round;
@@ -8307,7 +8303,7 @@ city:0.3;enable-background:new;" width="31" height="32" xlink:href="public/E069F
                                                                                                                     <svg class="use single_Lohit zoom closed" version="1.1" id="Lohit_map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.9 595.3" style="enable-background:new 0 0 841.9 595.3;" xml:space="preserve">
                                                                                                                         <style type="text/css">
                                                                                                                             .Lohit {
-                                                                                                                                fill: lightgray;
+                                                                                                                                fill: #0288d1;
                                                                                                                                 stroke: white;
                                                                                                                                 stroke-width: 2;
                                                                                                                                 stroke-linecap: round;

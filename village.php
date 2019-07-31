@@ -3422,7 +3422,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div  class="Bomjir trans">
+                    <!-- <div  class="Bomjir trans">
                         <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 500" style="enable-background:new 0 0 50 500;" xml:space="preserve">
                             <style type="text/css">
                                 .st0 {
@@ -3468,7 +3468,7 @@
                                 <path class="energy_and_ict"  d="M25.22,96.49c-3.6,4.25-7.21,8.5-10.81,12.68c-2.43,1.51-4.78,3.03-7.21,4.54c1.54-2.31,3.16-4.68,4.71-6.99C16.32,103.26,20.74,99.87,25.22,96.49z" />
                             </g>
                         </svg>
-                    </div>
+                    </div> -->
                     <div  class="Gomkelling trans">
                         <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 500" style="enable-background:new 0 0 50 500;" xml:space="preserve">
                             <style type="text/css">
@@ -3751,7 +3751,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div  class="Karle trans">
+                    <!-- <div  class="Karle trans">
                         <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 500" style="enable-background:new 0 0 50 500;" xml:space="preserve">
                             <style type="text/css">
                                 .st0 {
@@ -3797,7 +3797,7 @@
                                 <path class="energy_and_ict"  d="M25.22,96.49c-3.6,4.25-7.21,8.5-10.81,12.68c-2.43,1.51-4.78,3.03-7.21,4.54c1.54-2.31,3.16-4.68,4.71-6.99C16.32,103.26,20.74,99.87,25.22,96.49z" />
                             </g>
                         </svg>
-                    </div>
+                    </div> -->
                     <div  class="Ngorlung trans">
                         <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 500" style="enable-background:new 0 0 50 500;" xml:space="preserve">
                             <style type="text/css">
@@ -5942,6 +5942,7 @@
                 })
 
                 var max = order[0].tot_score;
+                
 
                 for (let i = 1; i <= order.length; i++) {
                     var tall = ((order[i-1].tot_score*100)/max)/100;

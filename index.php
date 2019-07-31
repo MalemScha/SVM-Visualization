@@ -1165,7 +1165,7 @@
                         </div>
 
 
-                         <div  class="Shi-Yomi trans">
+                         <!-- <div  class="Shi-Yomi trans">
 
                                 <svg version="1.1" class="viz" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 80 500" style="enable-background:new 0 0 80 500;" xml:space="preserve">
@@ -1212,7 +1212,7 @@
                            </svg>
 
 
-                        </div>
+                        </div> -->
                         <div id="visButtonsContainer" class="mixerPageMode" style="visibility: visible; opacity: 0;">
 		<div id="visButtonsSorting"><span data-i18n="[html]vis.sortbuttons.sortBy">&#8592; Districts</span></div>
 		

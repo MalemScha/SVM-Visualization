@@ -5979,9 +5979,9 @@
                     <option value="Kugi_Pomte">Kugi_Pomte</option>
                     <option value="TarasuMobuk">TarasuMobuk</option>
                     <option value="Kambu_">Kambu_</option>
-                    {{-- <optgroup label="Lower Subansiri">
+                    <!-- {{-- <optgroup label="Lower Subansiri">
                     <option value="Bomjir">Bomjir</option>
-                    <option value="Karle">Karle</option> --}}
+                    <option value="Karle">Karle</option> --}} -->
 
 
     </select>
