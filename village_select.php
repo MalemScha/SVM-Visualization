@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="public/css/app.css" rel="stylesheet">
     <link href="public/css/my.css" rel="stylesheet">
     <link href="public/css/viz.css" rel="stylesheet">
@@ -6166,7 +6167,7 @@
                         var size2 = (order[i-1].shg/100)*1.6;
                         var s2_str = 'rgb(171, 71, 188)';
                         var s2_fill = 'rgb(171, 71, 188)';
-                        var s2_w =s1;
+                        var s2_w =s2;
                         if(s2 == 0){
                             s2_str = 'black';
                             s2_fill = 'rgb(245, 245, 245,0.4)';
@@ -6186,7 +6187,7 @@
                         var size3 = (order[i-1].agriculture/100*1.6);
                         var s3_str = 'rgb(136,132,14)';
                         var s3_fill = 'rgb(136,132,14)';
-                        var s3_w =s1;
+                        var s3_w =s3;
                         if(s3 == 0){
                             s3_str = 'black';
                             s3_fill = 'rgb(245, 245, 245,0.4)';
@@ -6205,7 +6206,7 @@
                         var size4 = (order[i-1].finance/100)*1.6;
                         var s4_str = 'rgb(136, 71, 14)';
                         var s4_fill = 'rgb(136, 71, 14)';
-                        var s4_w =s1;
+                        var s4_w =s4;
                         if(s4 == 0){
                             s4_str = 'black';
                             s4_fill = 'rgb(245, 245, 245,0.4)';
@@ -6224,7 +6225,7 @@
                         var size5 = (order[i-1].food_and_supplies/100)*1.6;
                         var s5_str = 'rgb(136, 14, 79)';
                         var s5_fill = 'rgb(136, 14, 79)';
-                        var s5_w =s1;
+                        var s5_w =s5;
                         if(s5 == 0){
                             s5_str = 'black';
                             s5_fill = 'rgb(245, 245, 245,0.4)';
@@ -6243,7 +6244,7 @@
                         var size6 = (order[i-1].energy_and_ict/100*1.6);
                         var s6_str = 'rgb(255, 255, 51)';
                         var s6_fill = 'rgb(255, 255, 51)';
-                        var s6_w =s1;
+                        var s6_w =s6;
                         if(s6 == 0){
                             s6_str = 'black';
                             s6_fill = 'rgb(245, 245, 245,0.4)';
@@ -6262,7 +6263,7 @@
                         var size7 = (order[i-1].healthcare/100)*1.6;
                         var s7_str = 'rgb(56, 193, 114)';
                         var s7_fill = 'rgb(56, 193, 114)';
-                        var s7_w =s1;
+                        var s7_w =s7;
                         if(s7 == 0){
                             s7_str = 'black';
                             s7_fill = 'rgb(245, 245, 245,0.4)';
@@ -6281,7 +6282,7 @@
                         var size8 = (order[i-1].animal_husbandry/100)*1.6;
                         var s8_str = 'rgb(255, 51, 51)';
                         var s8_fill = 'rgb(255, 51, 51)';
-                        var s8_w =s1;
+                        var s8_w =s8;
                         if(s8 == 0){
                             s8_str = 'black';
                             s8_fill = 'rgb(245, 245, 245,0.4)';
@@ -6300,7 +6301,7 @@
                         var size9 = (order[i-1].fisheries/100)*1.6;
                         var s9_str = 'rgb(112, 112, 112)';
                         var s9_fill = 'rgb(112, 112, 112)';
-                        var s9_w =s1;
+                        var s9_w =s9;
                         if(s9 == 0){
                             s9_str = 'black';
                             s9_fill = 'rgb(245, 245, 245,0.4)';
@@ -6319,7 +6320,7 @@
                         var size10 = (order[i-1].lodging_and_boarding/100)*1.6;
                         var s10_str = 'rgb(80, 150, 80)';
                         var s10_fill = 'rgb(80, 150, 80)';
-                        var s10_w =s1;
+                        var s10_w =s10;
                         if(s10 == 0){
                             s10_str = 'black';
                             s10_fill = 'rgb(245, 245, 245,0.4)';
@@ -6338,7 +6339,7 @@
                         var size11 = (order[i-1].tourism/100)*1.6;
                         var s11_str = 'rgb(150, 80, 80)';
                         var s11_fill = 'rgb(150, 80, 80)';
-                        var s11_w =s1;
+                        var s11_w =s11;
                         if(s11 == 0){
                             s11_str = 'black';
                             s11_fill = 'rgb(245, 245, 245,0.4)';
@@ -6357,7 +6358,7 @@
                         var size12 = (order[i-1].handloom_and_handicraft/100)*1.6;
                         var s12_str = 'rgb(71,14,136)';
                         var s12_fill = 'rgb(71,14,136)';
-                        var s12_w =s1;
+                        var s12_w =s12;
                         if(s12 == 0){
                             s12_str = 'black';
                             s12_fill = 'rgb(245, 245, 245,0.4)';
@@ -6376,7 +6377,7 @@
                         var size13 = (order[i-1].education/100)*1.6;
                         var s13_str = 'rgb(244,81,30)';
                         var s13_fill = 'rgb(244,81,30)';
-                        var s13_w =s1;
+                        var s13_w =s13;
                         if(s13 == 0){
                             s13_str = 'black';
                             s13_fill = 'rgb(245, 245, 245,0.4)';
@@ -6395,7 +6396,7 @@
                         var size14 = (order[i-1].security/100)*1.6;
                         var s14_str = 'rgb(0, 77, 64)';
                         var s14_fill = 'rgb(0, 77, 64)';
-                        var s14_w =s1;
+                        var s14_w =s14;
                         if(s14 == 0){
                             s14_str = 'black';
                             s14_fill = 'rgb(245, 245, 245,0.4)';
